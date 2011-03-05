@@ -13,11 +13,11 @@ Add the following lines just before your @</head>@ tag:
 bc. <link href="jrc/styles/all.css" media="screen" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
 <script src="jright/jquery.client.js" type="text/javascript"></script>
-<script src="jright/jquery.jright.min.js" type="text/javascript">jQuery(function($) { $('#jright').jright() })</script>
+<script src="jright/jquery.jright.min.js" type="text/javascript">jQuery(function($) { $('#menu').jright() })</script>
 
 Then create your customized menu:
 
-bc. <ul id="jright">
+bc. <ul id="menu" class="jright">
   <li class="disabled sep">jright menu</li>
   <li>Embed&hellip;</li>
   <li class="sub">Share
