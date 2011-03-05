@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jright demo</title>
+  <link href="jright/styles/all.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+  <script src="jright/jquery.client.js" type="text/javascript"></script>
+  <script src="jright/jquery.jright.min.js" type="text/javascript"></script>
+  <script>
+    jQuery(function($) {
+      $('#jright').jright({
+        mode: 'inherit'
+      })
+    })
+  </script>
+  <style>
+  body {
+    font-family: tahoma;
+  }
+  .styles>div {
+    float: left;
+    width: 200px;
+    height: 180px;
+    background: #eee;
+    border: 2px solid #999;
+    margin: 2px;
+    text-align: center;
+    font-size: 12px;
+    transition: background .2s ease;
+    -o-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -webkit-transition: background .2s ease;
+  }
+  .styles>div:hover {
+    background: #ccc;
+  }
+  .styles span {
+    color: #777;
+    display: block;
+    margin-top: 50%;
+  }
+  </style>
+</head>
+<body>
+  <h1>jright demo</h1>
+  <p>Right-click anywhere on the page.</p>
+  <div class="styles">
+    <div class="mac">
+      <p>Mac OSX</p>
+      <span>Supported</span>
+    </div>
+    <div class="win.ie">
+      <p>Windows IE</p>
+      <span>Not supported yet</span>
+    </div>
+    <div class="win.firefox">
+      <p>Windows Firefox</p>
+      <span>Not supported yet</span>
+    </div>
+    <div class="win.chrome">
+      <p>Windows Chrome</p>
+      <span>Not supported yet</span>
+    </div>
+  </div>
+  <ul id="jright">
+    <li class="disabled sep">jright menu</li>
+    <li onclick="alert('embed')">Embed&hellip;</li>
+    <li class="sub">Share
+      <ul>
+        <li onclick="alert('facebook')">Facebook</li>
+        <li onclick="alert('twitter')">Twitter</li>
+      </ul>
+    </li>
+    <li class="sub">Download
+      <ul>
+        <li class="disabled">Soon&hellip;</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

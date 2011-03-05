@@ -1,0 +1,34 @@
+#jright.mac
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+  font-size: 14px
+  &, ul
+    background: rgba(255,255,255,.95)
+    padding: 4px 0
+    border-color: #E9E9E9 #C5C5C5 rgba(50,50,50,.5) #C4C4C4
+    +border-radius
+    +box-shadow(rgba(50,50,50,.3), 2px, 10px, 8px)
+    >li
+      padding: 0 21px
+      margin: -1px
+      border-top: 1px solid transparent
+      &:hover
+        color: #fff
+        background-color: #4457FA
+        +linear-gradient(color-stops(#687CFB, #3743F9))
+        border-top-color: #6074F3
+      &.disabled
+        color: #999
+        &:hover
+          background: transparent
+          border-top-color: transparent
+      &.sep
+        border-bottom: 1px solid #E4E4E4
+        padding-bottom: 6px
+        margin-bottom: 6px
+    li.sub:after
+      margin: -1px -10px 0 0
+      content: "\203A"
+  // Submenus
+  ul
+    top: -5px
+    //+transition(opacity, .2s, ease)

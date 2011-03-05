@@ -1,0 +1,36 @@
+@import "compass"
+
+#jright
+  display: none
+  position: absolute
+  text-align: left
+  cursor: default
+  &, ul
+    color: #000
+    background: #fff
+    list-style-type: none
+    margin: 0
+    padding: 0
+    border: 1px solid #000
+    >li
+      position: relative
+      +nowrap
+      &.disabled
+        color: #999
+      &.sep
+        border-bottom: 1px solid #ccc
+        padding-bottom: 2px
+        margin-bottom: 2px
+    li.sub:after
+      +float-right
+      content: ">"
+  // Submenus
+  ul
+    position: absolute
+    display: none
+    //+transparent
+    left: 100%
+    top: -1px
+  li:hover ul
+    display: block
+    //opacity: 1
