@@ -104,4 +104,5 @@
       $.error('Method ' +  method + ' does not exist on jQuery.jright');
     }
   };
+} ) (jQuery); // Monkey patch needed to make the Makefile work properly
 })(jQuery);

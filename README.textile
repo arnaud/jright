@@ -10,13 +10,13 @@ h2. Usage
 
 Add the following lines just before your @</head>@ tag:
 
-bc. <link href="jrc/styles/all.css" media="screen" rel="stylesheet" type="text/css">
+bc. <link href="styles/all.css" media="screen" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
-<script src="jright/jquery.client.js" type="text/javascript"></script>
+<script src="jquery.client.js" type="text/javascript"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
-  <script type="text/javascript" src="jright/selectivizr.js"></script>
+  <script type="text/javascript" src="js/selectivizr.js"></script>
 <![endif]-->
-<script src="jright/jquery.jright.min.js" type="text/javascript">jQuery(function($) { $('#menu').jright() })</script>
+<script src="jquery.jright.min.js" type="text/javascript">jQuery(function($) { $('#menu').jright() })</script>
 
 Then create your customized menu:
 
