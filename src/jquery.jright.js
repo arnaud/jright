@@ -75,6 +75,7 @@
         style = settings.mode;
       }
       var style = style || methods.detect_style();
+      style = style.replace('.',' ');
       obj.attr('class', 'jright '+style);
     },
     // prevent the context menu from going beyond the visible screen
