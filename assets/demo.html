@@ -13,7 +13,7 @@
   <script>
     jQuery(function($) {
       $('#menu').jright({
-        mode: 'inherit'
+        style: 'inherit'
       })
     })
   </script>
@@ -55,19 +55,22 @@
     <div class="win.xp">
       <p>Windows XP</p>
     </div>
+    <div class="win.seven">
+      <p>Windows 7</p>
+    </div>
   </div>
   <ul id="menu" class="jright">
-    <li class="disabled sep">jright menu</li>
-    <li onclick="alert('embed')">Embed&hellip;</li>
-    <li class="sub">Share
+    <li class="disabled sep"><span>jright menu</span></li>
+    <li onclick="alert('embed')"><span>Embed&hellip;</span></li>
+    <li class="sub"><span>Share</span>
       <ul>
-        <li onclick="alert('facebook')">Facebook</li>
-        <li onclick="alert('twitter')">Twitter</li>
+        <li onclick="alert('facebook')"><span>Facebook</span></li>
+        <li onclick="alert('twitter')"><span>Twitter</span></li>
       </ul>
     </li>
-    <li class="sub">Download
+    <li class="sub"><span>Download</span>
       <ul>
-        <li class="disabled">Soon&hellip;</li>
+        <li class="disabled"><span>Soon&hellip;</span></li>
       </ul>
     </li>
   </ul>

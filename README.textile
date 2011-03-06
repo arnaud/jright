@@ -21,20 +21,41 @@ bc. <link href="jrc/styles/all.css" media="screen" rel="stylesheet" type="text/c
 Then create your customized menu:
 
 bc. <ul id="menu" class="jright">
-  <li class="disabled sep">jright menu</li>
-  <li>Embed&hellip;</li>
-  <li class="sub">Share
+  <li class="disabled sep"><span>jright menu</span></li>
+  <li><span>Embed&hellip;</span></li>
+  <li class="sub"><span>Share</span>
     <ul>
-      <li>Facebook</li>
-      <li>Twitter</li>
+      <li><span>Facebook</span></li>
+      <li><span>Twitter</span></li>
     </ul>
   </li>
-  <li class="sub">Download
+  <li class="sub"><span>Download</span>
     <ul>
-      <li class="disabled">Soon&hellip;</li>
+      <li class="disabled"><span>Soon&hellip;</span></li>
     </ul>
   </li>
 </ul>
+
+h2. Options
+
+The basic usage is this one-liner:
+
+bc. $('#menu').jright();
+
+But options can be passed as arguments:
+
+h3. @style@
+
+The style can be defined in the options.
+
+bc. $('#menu').jright({
+  style: 'win.seven'
+});
+
+@style@ being either:
+* @native@: the current OS is read so that the corresponding style will be used ;
+* @inherit@: classes of clicked elements define the style that will be used (multiple styles can then be used within a single page) ;
+* a specific style: @mac@, @win.xp@, @win.seven@&hellip;
 
 h2. Build
 

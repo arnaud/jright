@@ -9,7 +9,7 @@
 (function($) {
   var obj = $(document);
   var settings = {
-    mode: 'native', // 'native', 'inherit', 'win.ie', 'mac', 'lin.firefox'...
+    style: 'native', // 'native', 'inherit', 'win.xp', 'mac'...
     parent: document
   };
   var methods = {
@@ -64,7 +64,7 @@
     // set the context menu style
     set_style: function() {
       var style = '';
-      switch(settings.mode) {
+      switch(settings.style) {
       case 'native':
         style = methods.detect_style();
         break;
@@ -72,7 +72,7 @@
         style = $(settings.parent).attr('class');
         break;
       default:
-        style = settings.mode;
+        style = settings.style;
       }
       var style = style || methods.detect_style();
       style = style.replace('.',' ');

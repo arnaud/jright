@@ -31,7 +31,6 @@ jright:
   cp ${JRC_ORIGIN} ${DIST_DIR}/jright; \
   echo "* Copying assets files..."; \
   cp ${ASSETS_DIR}/demo.html ${DIST_DIR}; \
-  cp ${ASSETS_DIR}/selectivizr.js ${DIST_DIR}; \
   cp ${ASSETS_DIR}/jquery.client.js ${DIST_DIR}/jright; \
   cp ${ASSETS_DIR}/selectivizr.js ${DIST_DIR}/jright;
 

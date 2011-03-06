@@ -1,0 +1,53 @@
+/*!
+ * jright
+ * jQuery plugin that enables using custom contextual menus with a native look&feel
+ * https://github.com/arnaud/jright
+ *
+ * Copyright 2011, Arnaud Leymet
+ * Licensed under the MIT license.
+ */
+
+.jright.win.seven
+  font-family: verdana
+  font-size: 11px
+  &, ul
+    background: #F0F0F0
+    padding: 2px
+    border-color: #ACA899
+    +box-shadow(rgba(50,50,50,.3), 3px, 3px, 2px)
+    >li
+      >span
+        display: block
+        border-left: 1px solid #fff
+        +box-shadow(#E2E3E3,-1px,0,0)
+        padding: 4px 4px
+      &:hover
+        border: 1px solid #B5D6FF
+        background-color: #EBF4FD
+        +border-radius(2px)
+        margin: -1px
+        >span
+          border-left-color: #F0F6FA
+          +box-shadow(#E8EEF1,-1px,0,0)
+      &.disabled
+        color: #ACA899
+      &.sep
+        padding-bottom: 4px
+        border-bottom: 1px solid #E2E3E3
+        +box-shadow(#fff,0,1px,0)
+        &:hover
+          margin-bottom: 2px
+    li.sub:after
+      margin: 0
+      content: ""
+    li.sub>span:after
+      +float-right
+      margin: -1px -20px 0 0
+      content: "\203A"
+  li
+    padding: 0 28px
+  // Submenus
+  ul
+    top: -3px
+    margin-left: -2px
+    //+transition(opacity, .2s, ease)
