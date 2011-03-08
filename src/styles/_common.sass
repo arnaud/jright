@@ -28,13 +28,13 @@
     list-style-type: none
     margin: 0
     padding: 0
-    border: 1px solid #000
+    border: 1px solid transparent
     >li
       position: relative
       +nowrap
       &.disabled
         color: #999
-      &.sep
+      &.separator
         border-bottom: 1px solid #ccc
         padding-bottom: 2px
         margin-bottom: 2px
@@ -46,9 +46,9 @@
   ul
     position: absolute
     display: none
-    //+transparent
+    +transparent
     left: 100%
     top: -1px
-  li:hover ul
+  li:hover>ul
     display: block
-    //opacity: 1
+    opacity: 1

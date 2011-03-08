@@ -31,12 +31,17 @@
           +box-shadow(#E8EEF1,-1px,0,0)
       &.disabled
         color: #ACA899
-      &.sep
+      &.separator
         padding-bottom: 4px
         border-bottom: 1px solid #E2E3E3
         +box-shadow(#fff,0,1px,0)
         &:hover
+          margin-top: 0
           margin-bottom: 2px
+          background: inherit
+          border-top: transparent
+          border-left: transparent
+          border-right: transparent
     li.sub:after
       margin: 0
       content: ""

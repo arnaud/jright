@@ -21,7 +21,8 @@ bc. <link href="styles/all.css" media="screen" rel="stylesheet" type="text/css">
 Then create your customized menu:
 
 bc. <ul id="menu" class="jright">
-  <li class="disabled sep"><span>jright menu</span></li>
+  <li class="disabled"><span>jright menu</span></li>
+  <li class="separator"></li>
   <li><span>Embed&hellip;</span></li>
   <li class="sub"><span>Share</span>
     <ul>
