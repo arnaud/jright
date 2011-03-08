@@ -34,10 +34,17 @@
         border-bottom: 1px solid #E4E4E4
         padding-bottom: 6px
         margin-bottom: 6px
-    li.sub:after
-      margin: -1px -10px 0 0
-      content: "\203A"
+    li.sub
+      &:after
+        margin: -1px -10px 0 0
+        content: "X"
+        color: transparent
+        background-image: #{inline_image("arrow_mac.png")}
+      &:hover:after
+        background-image: #{inline_image("arrow_mac_hover.png")}
   // Submenus
   ul
     top: -5px
-    //+transition(opacity, .2s, ease)
+    +transition(opacity, 0s, ease)
+  li:hover ul
+    +transition-delay(150ms)
