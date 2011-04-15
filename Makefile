@@ -40,6 +40,7 @@ jright: init ${JR}
 
 assets: init
 	@@echo "* Copying assets files..."; \
+	cp ${ASSETS_DIR}/jquery.min.js ${DIST_DIR}/js; \
 	cp ${ASSETS_DIR}/demo.html ${DIST_DIR}; \
 	cp ${ASSETS_DIR}/jquery.client.js ${DIST_DIR}/js; \
 	cp ${ASSETS_DIR}/selectivizr.js ${DIST_DIR}/js; \
@@ -47,7 +48,7 @@ assets: init
 
 styles: init
 	@@echo "* Compiling stylesheets..."; \
-	compass compile -s compressed --css-dir ${DIST_DIR} --images-dir src/styles/images;
+	compass compile -s compressed --css-dir ${DIST_DIR} --sass-dir src/styles --images-dir src/styles/images;
 
 ${JR}: ${MODULES} | ${DIST_DIR}
 	@@echo "* Building" ${JR}
