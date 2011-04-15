@@ -48,7 +48,7 @@ assets: init
 
 styles: init
 	@@echo "* Compiling stylesheets..."; \
-	compass compile -s compressed --css-dir ${DIST_DIR} --sass-dir src/styles --images-dir src/styles/images;
+	compass compile -s compressed --css-dir ${DIST_DIR}/styles --sass-dir src/styles --images-dir src/styles/images;
 
 ${JR}: ${MODULES} | ${DIST_DIR}
 	@@echo "* Building" ${JR}
